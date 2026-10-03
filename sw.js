@@ -1,5 +1,5 @@
 // オフライン対応: アプリ本体をキャッシュ（更新時は CACHE のバージョンを上げる）
-const CACHE = 'comit-v1';
+const CACHE = 'comit-v2';
 const ASSETS = [
   './', 'index.html', 'style.css', 'app.js', 'manifest.webmanifest',
   'assets/splash.png', 'assets/wordmark.png', 'assets/leaf.png',

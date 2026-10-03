@@ -49,7 +49,12 @@
   <div id="app">
     <header class="topbar">
       <img class="topbar__logo" src="assets/wordmark.png" alt="comit">
-      <div class="topbar__date" id="todayLabel"></div>
+      <div class="topbar__right">
+        <div class="topbar__date" id="todayLabel"></div>
+        <button class="icon-btn" data-action="settings" aria-label="データとバックアップ">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
     </header>
 
     <main id="pager" aria-live="polite"></main>
@@ -70,7 +75,7 @@
       <div id="sheetBody"></div>
       <div class="sheet__actions">
         <button type="button" class="btn btn--danger" id="sheetDelete" hidden>削除</button>
-        <button type="button" class="btn btn--ghost" data-close>キャンセル</button>
+        <button type="button" class="btn btn--ghost" id="sheetCancel" data-close>キャンセル</button>
         <button type="submit" class="btn btn--primary" id="sheetSubmit">保存</button>
       </div>
     </form>
